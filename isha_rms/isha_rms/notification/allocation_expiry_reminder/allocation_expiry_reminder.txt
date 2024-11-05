@@ -1,0 +1,5 @@
+Dear User,
+Please be notified that your Allocated Resource is Exipiring soon,
+Please make sure to Reorder before time!
+
+Thanks

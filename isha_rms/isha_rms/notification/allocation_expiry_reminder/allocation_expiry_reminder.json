@@ -1,0 +1,29 @@
+{
+ "attach_print": 0,
+ "channel": "Email",
+ "creation": "2024-11-05 15:41:42.179883",
+ "date_changed": "to_date",
+ "days_in_advance": 5,
+ "docstatus": 0,
+ "doctype": "Notification",
+ "document_type": "Resource Allocation",
+ "enabled": 1,
+ "event": "Days Before",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "Dear User,\nPlease be notified that your Allocated Resource is Exipiring soon,\nPlease make sure to Reorder before time!\n\nThanks",
+ "message_type": "Plain Text",
+ "modified": "2024-11-05 15:41:42.179883",
+ "modified_by": "Administrator",
+ "module": "Isha RMS",
+ "name": "Allocation Expiry Reminder",
+ "owner": "Administrator",
+ "recipients": [
+  {
+   "receiver_by_document_field": "allocate_to"
+  }
+ ],
+ "send_system_notification": 1,
+ "send_to_all_assignees": 0,
+ "subject": "Resource Allocation is Expiring!"
+}

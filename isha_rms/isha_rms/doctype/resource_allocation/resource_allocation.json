@@ -1,0 +1,127 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:RA-{YYYY}-{#####}",
+ "creation": "2024-11-05 14:49:23.747568",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_mykm",
+  "amended_from",
+  "resource_type",
+  "resource",
+  "code",
+  "from_date",
+  "column_break_trxs",
+  "allocation_type",
+  "allocate_to",
+  "email",
+  "location",
+  "to_date"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_mykm",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Resource Allocation",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "resource",
+   "fieldtype": "Link",
+   "label": "Resource",
+   "options": "Resource"
+  },
+  {
+   "fieldname": "column_break_trxs",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "allocate_to",
+   "fieldtype": "Link",
+   "label": "Allocate To",
+   "options": "User"
+  },
+  {
+   "fetch_from": "resource.code",
+   "fieldname": "code",
+   "fieldtype": "Data",
+   "label": "Code",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "allocate_to.location",
+   "fieldname": "location",
+   "fieldtype": "Data",
+   "label": "Location",
+   "read_only": 1
+  },
+  {
+   "fieldname": "resource_type",
+   "fieldtype": "Select",
+   "label": "Resource Type",
+   "options": "\nEquipment\nMaterial"
+  },
+  {
+   "allow_on_submit": 1,
+   "default": "Deallocated",
+   "fieldname": "allocation_type",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "\nAllocated\nDeallocated",
+   "read_only": 1
+  },
+  {
+   "fieldname": "from_date",
+   "fieldtype": "Date",
+   "label": "From"
+  },
+  {
+   "fieldname": "to_date",
+   "fieldtype": "Date",
+   "label": "To"
+  },
+  {
+   "fetch_from": "allocate_to.email",
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Email"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-11-05 15:53:04.531439",
+ "modified_by": "Administrator",
+ "module": "Isha RMS",
+ "name": "Resource Allocation",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

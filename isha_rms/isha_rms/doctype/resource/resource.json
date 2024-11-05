@@ -1,0 +1,88 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:code",
+ "creation": "2024-11-05 14:29:06.304701",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "resource_name",
+  "code",
+  "column_break_kwxy",
+  "type",
+  "status",
+  "section_break_cnkw",
+  "description"
+ ],
+ "fields": [
+  {
+   "fieldname": "type",
+   "fieldtype": "Select",
+   "label": "Type",
+   "options": "\nEquipment\nMaterial"
+  },
+  {
+   "fieldname": "code",
+   "fieldtype": "Data",
+   "label": "Code",
+   "unique": 1
+  },
+  {
+   "fieldname": "resource_name",
+   "fieldtype": "Data",
+   "label": "Resource Name"
+  },
+  {
+   "fieldname": "column_break_kwxy",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_cnkw",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Text Editor",
+   "label": "Description"
+  },
+  {
+   "default": "Available",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "\nAvailable\nAllocated"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [
+  {
+   "link_doctype": "Resource Allocation",
+   "link_fieldname": "resource"
+  }
+ ],
+ "modified": "2024-11-05 15:49:59.178673",
+ "modified_by": "Administrator",
+ "module": "Isha RMS",
+ "name": "Resource",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "resource_name"
+}
